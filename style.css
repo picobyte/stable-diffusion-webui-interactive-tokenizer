@@ -1,0 +1,60 @@
+.i-tokenizer-row {
+    margin: -1rem 0 5px;
+    padding: 0 12px;
+    font-size: small;
+}
+
+.i-tokenizer-row.negative {
+    margin-bottom: 1rem;
+}
+
+.i-tokenizer-row > p, .i-tokenizer-row > p {
+    margin: 0;
+}
+
+.i-tokenizer-row > p+p, .i-tokenizer-row > p+p {
+    margin-top: 7px;
+}
+
+.i-tokenizer-count {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #778cc9;
+}
+
+.i-tokenizer-token {
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
+
+.i-tokenizer-token-0 {
+    border-bottom-color: rgba(235, 110, 160, 0.4);
+}
+
+.i-tokenizer-token-0:hover {
+    border-bottom-color: rgba(235, 110, 160, 1.0);
+}
+
+.i-tokenizer-token-1 {
+    border-bottom-color: rgba(104, 164, 217, 0.4);
+}
+
+.i-tokenizer-token-1:hover {
+    border-bottom-color: rgba(104, 164, 217, 1.0);
+}
+
+.i-tokenizer-token-2 {
+    border-bottom-color: rgba(246, 180, 131, 0.4);
+}
+
+.i-tokenizer-token-2:hover {
+    border-bottom-color: rgba(246, 180, 131, 1.0);
+}
+
+.i-tokenizer-token-3 {
+    border-bottom-color: rgba(60, 179, 122, 0.4);
+}
+
+.i-tokenizer-token-3:hover {
+    border-bottom-color: rgba(60, 179, 122, 1.0);
+}
