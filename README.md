@@ -46,4 +46,30 @@ AND記法・Prompt editing・Alternating Words
 ![](sampleABC.png)
 
 ## English
-TODO
+In order, above images show: emphasis only, BREAK and AND notation, Prompt editing, Alternating Words and an image with all three.
+
+### Functional Description
+The following information is shown while entering the prompt/negative prompt:
+
+- How Clip delimits and recognizes strings
+  - Color coding with underlines
+- Token ID for each word
+  - Display when hovering over a word
+- Strength of [emphasis](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis)
+  - word background color
+  - Stronger than 1.0 turns red, weaker than 1.0 turns blue
+- where chunks (75 token delimiters) are separated
+  - line break for each chunk
+- number of tokens per chunk
+  - When using [BREAK keyword] (https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#break-keyword), it is not always 1 chunk 75 tokens
+  - After each chunk in the format "<number of tokens> / 75"
+- Changes in the number of prompt tokens that change at each step
+  - If the prompt changes by Step, change the display of the number of tokens as follows.
+  - <Number of tokens before change> -> <Number of tokens after change> / 75
+  - It increases in a string depending on the number of changes, but for the sake of compactness, the 5th and subsequent times are omitted
+  - It is displayed when using the following notation
+     - [Prompt editing](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#prompt-editing)
+    - [Alternating Words](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#alternating-words)
+
+### sample
+Prompts are used with some modifications from [Code of Elements](https://docs.qq.com/doc/DWHl3am5Zb05QbGVs)
